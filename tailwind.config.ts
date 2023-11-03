@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-
+import { radixThemePreset } from 'radix-themes-tw'
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,6 +15,7 @@ const config: Config = {
       },
     },
   },
+  presets: [radixThemePreset],
   plugins: [],
 }
 export default config
