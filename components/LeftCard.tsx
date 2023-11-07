@@ -36,7 +36,7 @@ export default function LeftCard() {
               <br />
               Bhattacharya
             </CardTitle>
-            <CardDescription className="flex items-center">
+            <CardDescription className="flex items-center text-right">
               <code className="text-base">
                 Software Engineer <br />
                 Fullstack Developer [MERN, Java]
