@@ -1,5 +1,4 @@
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { Code, MailIcon } from "lucide-react";
+import { Code, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
@@ -78,38 +77,38 @@ export default function LeftCard() {
             <section className="text-left">
               <div className="text-md">Socials</div>
               <div className="flex flex-row justify-center mb-1">
-                <Button
-                  variant={"outline"}
-                  className="rounded-full border-primary-foreground mr-2"
+                <Link
+                  target="_blank"
+                  href={
+                    "https://www.linkedin.com/in/soumalya-bhattacharya-47b731165/"
+                  }
                 >
-                  <Link
-                    target="_blank"
-                    href={
-                      "https://www.linkedin.com/in/soumalya-bhattacharya-47b731165/"
-                    }
+                  <Button
+                    variant={"outline"}
+                    className="rounded-full border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
-                    <LinkedInLogoIcon className="text-primary" />
-                  </Link>
-                </Button>
-                <Button
-                  variant={"outline"}
-                  className="rounded-full border-primary-foreground mr-2"
-                >
-                  <Link target="_blank" href={"https://github.com/opticSquid"}>
-                    <GitHubLogoIcon className="text-primary" />
-                  </Link>
-                </Button>
-                <Button
-                  variant={"outline"}
-                  className="rounded-full border-primary-foreground mr-2"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://developers.google.com/profile/u/soumalya"}
+                    <LinkedinIcon />
+                  </Button>
+                </Link>
+                <Link target="_blank" href={"https://github.com/opticSquid"}>
+                  <Button
+                    variant={"outline"}
+                    className="rounded-full border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
-                    <Code className="text-primary" />
-                  </Link>
-                </Button>
+                    <GithubIcon />
+                  </Button>
+                </Link>
+                <Link
+                  target="_blank"
+                  href={"https://developers.google.com/profile/u/soumalya"}
+                >
+                  <Button
+                    variant={"outline"}
+                    className="rounded-full border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
+                  >
+                    <Code />
+                  </Button>
+                </Link>
               </div>
               <Link href={"mailto:soumalyabhattacharya6@gmail.com"}>
                 <Button className="w-full rounded-lg">
