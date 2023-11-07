@@ -31,7 +31,7 @@ export default function LeftCard() {
       <Card className="mt-2 mx-1 border-2">
         <CardHeader className="pb-0">
           <div className="flex flex-row justify-between">
-            <CardTitle className="text-xl">
+            <CardTitle className="text-xl font-semibold">
               Soumalya
               <br />
               Bhattacharya
@@ -65,7 +65,7 @@ export default function LeftCard() {
                     <Badge
                       key={skill.name}
                       variant={"outline"}
-                      className="mx-1 my-1 border-2 dark:border-primary-foreground"
+                      className="mx-1 my-1 border-2 dark:border-primary-foreground font-light"
                     >
                       <span className={skill.color} />
                       {skill.name}
@@ -85,17 +85,17 @@ export default function LeftCard() {
                 >
                   <Button
                     variant={"outline"}
-                    className="rounded-full border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
+                    className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
-                    <LinkedinIcon />
+                    <LinkedinIcon strokeWidth={1} />
                   </Button>
                 </Link>
                 <Link target="_blank" href={"https://github.com/opticSquid"}>
                   <Button
                     variant={"outline"}
-                    className="rounded-full border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
+                    className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
-                    <GithubIcon />
+                    <GithubIcon strokeWidth={1} />
                   </Button>
                 </Link>
                 <Link
@@ -104,15 +104,16 @@ export default function LeftCard() {
                 >
                   <Button
                     variant={"outline"}
-                    className="rounded-full border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
+                    className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
-                    <Code />
+                    <Code strokeWidth={1} />
                   </Button>
                 </Link>
               </div>
               <Link href={"mailto:soumalyabhattacharya6@gmail.com"}>
-                <Button className="w-full rounded-lg">
-                  <MailIcon className="mr-2" /> soumalyabhattacharya6@gmail.com
+                <Button className="w-full rounded-lg font-light mt-1">
+                  <MailIcon className="mr-2" strokeWidth={1} />
+                  soumalyabhattacharya6@gmail.com
                 </Button>
               </Link>
             </section>
