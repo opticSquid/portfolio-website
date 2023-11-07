@@ -111,7 +111,7 @@ export default function LeftCard() {
                 </Link>
               </div>
               <Link href={"mailto:soumalyabhattacharya6@gmail.com"}>
-                <Button className="w-full rounded-lg font-light">
+                <Button className="w-full rounded-lg font-light mt-1">
                   <MailIcon className="mr-2" strokeWidth={1} />
                   soumalyabhattacharya6@gmail.com
                 </Button>
