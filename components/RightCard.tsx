@@ -1,6 +1,7 @@
 import {
   AwardIcon,
   BriefcaseIcon,
+  FolderGit2Icon,
   GraduationCapIcon,
   User2Icon,
 } from "lucide-react";
@@ -42,8 +43,8 @@ function RightCard() {
       <div className="w-auto flex flex-col align-middle justify-center gap-2">
         <NavButtons icon={<User2Icon />} tooltip="About" />
         <NavButtons icon={<GraduationCapIcon />} tooltip="Education" />
-        <NavButtons icon={<AwardIcon />} tooltip="Certifications" />
-        <NavButtons icon={<BriefcaseIcon />} tooltip="Past Works" />
+        <NavButtons icon={<BriefcaseIcon />} tooltip="Work History" />
+        <NavButtons icon={<FolderGit2Icon />} tooltip="Projects" />
       </div>
     </div>
   );
