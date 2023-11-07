@@ -18,7 +18,7 @@ interface buttonProps {
 }
 const NavButtons = ({ icon, tooltip }: buttonProps) => {
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={100}>
       <Tooltip>
         <TooltipTrigger asChild>
           <Button
