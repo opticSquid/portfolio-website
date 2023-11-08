@@ -1,5 +1,6 @@
 "use client";
 import LeftCard from "@/components/LeftCard";
+import RightCard from "@/components/right-card/RightCard";
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
 export default function Home() {
@@ -10,9 +11,7 @@ export default function Home() {
   return (
     <div className="flex h-screen">
       <LeftCard />
-      <div className="w-3/5 overflow-auto">
-        <p>red</p>
-      </div>
+      <RightCard />
     </div>
   );
 }
