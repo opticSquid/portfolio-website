@@ -27,7 +27,7 @@ export default function LeftCard() {
     { name: "mongodb", color: "bg-rose-500 w-2 h-2 rounded-full mr-2" },
   ];
   return (
-    <div className="w-2/5 overflow-y-hidden">
+    <div className="h-screen w-2/5 overflow-y-hidden">
       <Card className="mt-2 mx-1 border-2">
         <CardHeader className="pb-0">
           <div className="flex flex-row justify-between">

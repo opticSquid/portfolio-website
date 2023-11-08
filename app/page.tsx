@@ -9,7 +9,7 @@ export default function Home() {
     setTheme("dark");
   }, []);
   return (
-    <div className="flex h-screen flex-row gap-2">
+    <div className="flex flex-row gap-2">
       <LeftCard />
       <RightCard />
     </div>
