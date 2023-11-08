@@ -54,11 +54,11 @@ function About() {
               in love with it. Then I slowly started to dive deep in topics like
               service discovery, api gateway, load balancing, high availability,
               scaling and maintainability etc. Made quite a few projects to
-              implement these things and understand better. Currently I'm in a
-              position where I can build quite a descent microservice based
+              implement these things and understand better. Currently I&apos;m
+              in a position where I can build quite a descent microservice based
               application that can handle real life loads and traffic without
               much problem while still keeping the data safe with authentication
-              and authorization. Now I'm focusing on topics like Reactive
+              and authorization. Now I&apos;m focusing on topics like Reactive
               Programming and frameworks like Vert.x, Quarkus to gain more
               knowledge on how to better utilize computing resources while
               decreasing response time and deployment technologies like Docker
