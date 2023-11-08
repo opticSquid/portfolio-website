@@ -14,21 +14,21 @@ import { Separator } from "./ui/separator";
 
 export default function LeftCard() {
   const skills = [
-    { name: "react", color: "bg-cyan-500 w-2 h-2 rounded-full mr-2" },
-    { name: "spring-boot", color: "bg-green-500 w-2 h-2 rounded-full mr-2" },
-    { name: "javascript", color: "bg-yellow-500 w-2 h-2 rounded-full mr-2" },
-    { name: "java", color: "bg-amber-500 w-2 h-2 rounded-full mr-2" },
-    { name: "rest-api", color: "bg-emerald-500 w-2 h-2 rounded-full mr-2" },
-    { name: "postman", color: "bg-orange-500 w-2 h-2 rounded-full mr-2" },
-    { name: "git", color: "bg-red-500 w-2 h-2 rounded-full mr-2" },
-    { name: "docker", color: "bg-blue-500 w-2 h-2 rounded-full mr-2" },
-    { name: "microservices", color: "bg-lime-500 w-2 h-2 rounded-full mr-2" },
-    { name: "mysql", color: "bg-purple-500 w-2 h-2 rounded-full mr-2" },
-    { name: "mongodb", color: "bg-rose-500 w-2 h-2 rounded-full mr-2" },
+    { name: "react", color: "bg-cyan-500 w-4 h-4 rounded-full mr-2" },
+    { name: "spring-boot", color: "bg-green-500 w-4 h-4 rounded-full mr-2" },
+    { name: "javascript", color: "bg-yellow-500 w-4 h-4 rounded-full mr-2" },
+    { name: "java", color: "bg-amber-500 w-4 h-4 rounded-full mr-2" },
+    { name: "rest-api", color: "bg-emerald-500 w-4 h-4 rounded-full mr-2" },
+    { name: "postman", color: "bg-orange-500 w-4 h-4 rounded-full mr-2" },
+    { name: "git", color: "bg-red-500 w-4 h-4 rounded-full mr-2" },
+    { name: "docker", color: "bg-blue-500 w-4 h-4 rounded-full mr-2" },
+    { name: "microservices", color: "bg-lime-500 w-4 h-4 rounded-full mr-2" },
+    { name: "mysql", color: "bg-purple-500 w-4 h-4 rounded-full mr-2" },
+    { name: "mongodb", color: "bg-rose-500 w-4 h-4 rounded-full mr-2" },
   ];
   return (
-    <div className="h-screen w-2/5 overflow-y-hidden">
-      <Card className="mt-2 mx-1 border-2">
+    <div className="mt-2 w-2/5 overflow-y-hidden">
+      <Card className="h-[99vh]  mx-1 border-2">
         <CardHeader className="pb-0">
           <div className="flex flex-row justify-between">
             <CardTitle className="text-xl font-semibold">
@@ -46,12 +46,10 @@ export default function LeftCard() {
         </CardHeader>
         <CardContent className="flex flex-col">
           <section className="flex items-center justify-center">
-            <Image
+            <img
               src="/face2.jpg"
               alt="face Image"
-              width={152}
-              height={188}
-              className="rounded-full object-contain"
+              className="h-[50vh] rounded-full object-contain"
             />
           </section>
           <Separator className="my-1" />
@@ -65,7 +63,7 @@ export default function LeftCard() {
                     <Badge
                       key={skill.name}
                       variant={"outline"}
-                      className="mx-1 my-1 border-2 dark:border-primary-foreground font-light"
+                      className="mx-1 my-1 border-2 dark:border-primary-foreground font-light p-3 text-base"
                     >
                       <span className={skill.color} />
                       {skill.name}
@@ -85,7 +83,7 @@ export default function LeftCard() {
                 >
                   <Button
                     variant={"outline"}
-                    size={"icon"}
+                    size={"lg"}
                     className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
                     <LinkedinIcon strokeWidth={1} />
@@ -94,7 +92,7 @@ export default function LeftCard() {
                 <Link target="_blank" href={"https://github.com/opticSquid"}>
                   <Button
                     variant={"outline"}
-                    size={"icon"}
+                    size={"lg"}
                     className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
                     <GithubIcon strokeWidth={1} />
@@ -106,7 +104,7 @@ export default function LeftCard() {
                 >
                   <Button
                     variant={"outline"}
-                    size={"icon"}
+                    size={"lg"}
                     className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
                     <Code strokeWidth={1} />
@@ -114,7 +112,7 @@ export default function LeftCard() {
                 </Link>
               </div>
               <Link href={"mailto:soumalyabhattacharya6@gmail.com"}>
-                <Button className="w-full rounded-lg mt-1">
+                <Button className="w-full rounded-lg mt-1" size={"lg"}>
                   <MailIcon className="mr-2" />
                   soumalyabhattacharya6@gmail.com
                 </Button>
