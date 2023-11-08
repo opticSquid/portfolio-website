@@ -14,17 +14,17 @@ import { Separator } from "./ui/separator";
 
 export default function LeftCard() {
   const skills = [
-    { name: "react", color: "bg-cyan-500 w-4 h-4 rounded-full mr-2" },
-    { name: "spring-boot", color: "bg-green-500 w-4 h-4 rounded-full mr-2" },
-    { name: "javascript", color: "bg-yellow-500 w-4 h-4 rounded-full mr-2" },
-    { name: "java", color: "bg-amber-500 w-4 h-4 rounded-full mr-2" },
-    { name: "rest-api", color: "bg-emerald-500 w-4 h-4 rounded-full mr-2" },
-    { name: "postman", color: "bg-orange-500 w-4 h-4 rounded-full mr-2" },
-    { name: "git", color: "bg-red-500 w-4 h-4 rounded-full mr-2" },
-    { name: "docker", color: "bg-blue-500 w-4 h-4 rounded-full mr-2" },
-    { name: "microservices", color: "bg-lime-500 w-4 h-4 rounded-full mr-2" },
-    { name: "mysql", color: "bg-purple-500 w-4 h-4 rounded-full mr-2" },
-    { name: "mongodb", color: "bg-rose-500 w-4 h-4 rounded-full mr-2" },
+    { name: "react", color: "bg-cyan-500 w-3 h-3 rounded-full mr-2" },
+    { name: "spring-boot", color: "bg-green-500 w-3 h-3 rounded-full mr-2" },
+    { name: "javascript", color: "bg-yellow-500 w-3 h-3 rounded-full mr-2" },
+    { name: "java", color: "bg-amber-500 w-3 h-3 rounded-full mr-2" },
+    { name: "rest-api", color: "bg-emerald-500 w-3 h-3 rounded-full mr-2" },
+    { name: "postman", color: "bg-orange-500 w-3 h-3 rounded-full mr-2" },
+    { name: "git", color: "bg-red-500 w-3 h-3 rounded-full mr-2" },
+    { name: "docker", color: "bg-blue-500 w-3 h-3 rounded-full mr-2" },
+    { name: "microservices", color: "bg-lime-500 w-3 h-3 rounded-full mr-2" },
+    { name: "mysql", color: "bg-purple-500 w-3 h-3 rounded-full mr-2" },
+    { name: "mongodb", color: "bg-rose-500 w-3 h-3 rounded-full mr-2" },
   ];
   return (
     <div className="mt-2 w-2/5 overflow-y-hidden">
@@ -63,7 +63,7 @@ export default function LeftCard() {
                     <Badge
                       key={skill.name}
                       variant={"outline"}
-                      className="mx-1 my-1 border-2 dark:border-primary-foreground font-light p-3 text-base"
+                      className="mx-1 my-1 border-2 dark:border-primary-foreground font-light p-2 text-base"
                     >
                       <span className={skill.color} />
                       {skill.name}
