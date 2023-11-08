@@ -27,7 +27,7 @@ export default function LeftCard() {
     { name: "mongodb", color: "bg-rose-500 w-2 h-2 rounded-full mr-2" },
   ];
   return (
-    <div className="w-2/5">
+    <div className="w-2/5 overflow-y-hidden">
       <Card className="mt-2 mx-1 border-2">
         <CardHeader className="pb-0">
           <div className="flex flex-row justify-between">
@@ -85,6 +85,7 @@ export default function LeftCard() {
                 >
                   <Button
                     variant={"outline"}
+                    size={"icon"}
                     className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
                     <LinkedinIcon strokeWidth={1} />
@@ -93,6 +94,7 @@ export default function LeftCard() {
                 <Link target="_blank" href={"https://github.com/opticSquid"}>
                   <Button
                     variant={"outline"}
+                    size={"icon"}
                     className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
                     <GithubIcon strokeWidth={1} />
@@ -104,6 +106,7 @@ export default function LeftCard() {
                 >
                   <Button
                     variant={"outline"}
+                    size={"icon"}
                     className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
                   >
                     <Code strokeWidth={1} />
@@ -111,8 +114,8 @@ export default function LeftCard() {
                 </Link>
               </div>
               <Link href={"mailto:soumalyabhattacharya6@gmail.com"}>
-                <Button className="w-full rounded-lg font-light mt-1">
-                  <MailIcon className="mr-2" strokeWidth={1} />
+                <Button className="w-full rounded-lg mt-1">
+                  <MailIcon className="mr-2" />
                   soumalyabhattacharya6@gmail.com
                 </Button>
               </Link>
