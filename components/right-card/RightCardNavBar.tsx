@@ -1,18 +1,29 @@
 import {
-  AwardIcon,
   BriefcaseIcon,
   FolderGit2Icon,
   GraduationCapIcon,
   User2Icon,
 } from "lucide-react";
 import { ReactNode } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./ui/tooltip";
+} from "../ui/tooltip";
+function RightCardNavBar() {
+  return (
+    <div className="w-auto flex flex-col align-middle justify-center gap-2">
+      <NavButtons icon={<User2Icon />} tooltip="About" />
+      <NavButtons icon={<GraduationCapIcon />} tooltip="Education" />
+      <NavButtons icon={<BriefcaseIcon />} tooltip="Work History" />
+      <NavButtons icon={<FolderGit2Icon />} tooltip="Projects" />
+    </div>
+  );
+}
+
+export default RightCardNavBar;
 interface buttonProps {
   icon: ReactNode;
   tooltip: string;
@@ -36,18 +47,3 @@ const NavButtons = ({ icon, tooltip }: buttonProps) => {
     </TooltipProvider>
   );
 };
-function RightCard() {
-  return (
-    <div className="w-3/5 overflow-auto mt-2 flex flex-row">
-      <div className="w-full">hello</div>
-      <div className="w-auto flex flex-col align-middle justify-center gap-2">
-        <NavButtons icon={<User2Icon />} tooltip="About" />
-        <NavButtons icon={<GraduationCapIcon />} tooltip="Education" />
-        <NavButtons icon={<BriefcaseIcon />} tooltip="Work History" />
-        <NavButtons icon={<FolderGit2Icon />} tooltip="Projects" />
-      </div>
-    </div>
-  );
-}
-
-export default RightCard;

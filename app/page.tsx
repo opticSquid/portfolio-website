@@ -1,6 +1,6 @@
 "use client";
 import LeftCard from "@/components/LeftCard";
-import RightCard from "@/components/RightCard";
+import RightCard from "@/components/right-card/RightCard";
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
 export default function Home() {
