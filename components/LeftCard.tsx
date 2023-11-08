@@ -49,7 +49,7 @@ export default function LeftCard() {
             <img
               src="/face2.jpg"
               alt="face Image"
-              className="h-[50vh] rounded-full object-contain"
+              className="w-3/5 rounded-full object-contain"
             />
           </section>
           <Separator className="my-1" />
