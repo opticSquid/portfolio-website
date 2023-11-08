@@ -1,4 +1,5 @@
-import { Code, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Code, MailIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
@@ -27,16 +28,16 @@ export default function LeftCard() {
     { name: "mongodb", color: "bg-rose-500 w-2 h-2 rounded-full mr-2" },
   ];
   return (
-    <div className="w-2/5 overflow-y-hidden">
+    <div className="w-2/5">
       <Card className="mt-2 mx-1 border-2">
         <CardHeader className="pb-0">
           <div className="flex flex-row justify-between">
-            <CardTitle className="text-xl font-semibold">
+            <CardTitle className="text-xl">
               Soumalya
               <br />
               Bhattacharya
             </CardTitle>
-            <CardDescription className="flex items-center text-right">
+            <CardDescription className="flex items-center">
               <code className="text-base">
                 Software Engineer <br />
                 Fullstack Developer [MERN, Java]
@@ -65,7 +66,7 @@ export default function LeftCard() {
                     <Badge
                       key={skill.name}
                       variant={"outline"}
-                      className="mx-1 my-1 border-2 dark:border-primary-foreground font-light"
+                      className="mx-1 my-1 border-2 dark:border-primary-foreground"
                     >
                       <span className={skill.color} />
                       {skill.name}
@@ -77,46 +78,42 @@ export default function LeftCard() {
             <section className="text-left">
               <div className="text-md">Socials</div>
               <div className="flex flex-row justify-center mb-1">
-                <Link
-                  target="_blank"
-                  href={
-                    "https://www.linkedin.com/in/soumalya-bhattacharya-47b731165/"
-                  }
+                <Button
+                  variant={"outline"}
+                  className="rounded-full border-primary-foreground mr-2"
                 >
-                  <Button
-                    variant={"outline"}
-                    size={"icon"}
-                    className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
+                  <Link
+                    target="_blank"
+                    href={
+                      "https://www.linkedin.com/in/soumalya-bhattacharya-47b731165/"
+                    }
                   >
-                    <LinkedinIcon strokeWidth={1} />
-                  </Button>
-                </Link>
-                <Link target="_blank" href={"https://github.com/opticSquid"}>
-                  <Button
-                    variant={"outline"}
-                    size={"icon"}
-                    className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
-                  >
-                    <GithubIcon strokeWidth={1} />
-                  </Button>
-                </Link>
-                <Link
-                  target="_blank"
-                  href={"https://developers.google.com/profile/u/soumalya"}
+                    <LinkedInLogoIcon className="text-primary" />
+                  </Link>
+                </Button>
+                <Button
+                  variant={"outline"}
+                  className="rounded-full border-primary-foreground mr-2"
                 >
-                  <Button
-                    variant={"outline"}
-                    size={"icon"}
-                    className="rounded-full border-2 border-primary-foreground mr-2 hover:bg-primary text-primary hover:text-black hover:scale-110"
+                  <Link target="_blank" href={"https://github.com/opticSquid"}>
+                    <GitHubLogoIcon className="text-primary" />
+                  </Link>
+                </Button>
+                <Button
+                  variant={"outline"}
+                  className="rounded-full border-primary-foreground mr-2"
+                >
+                  <Link
+                    target="_blank"
+                    href={"https://developers.google.com/profile/u/soumalya"}
                   >
-                    <Code strokeWidth={1} />
-                  </Button>
-                </Link>
+                    <Code className="text-primary" />
+                  </Link>
+                </Button>
               </div>
               <Link href={"mailto:soumalyabhattacharya6@gmail.com"}>
-                <Button className="w-full rounded-lg mt-1">
-                  <MailIcon className="mr-2" />
-                  soumalyabhattacharya6@gmail.com
+                <Button className="w-full rounded-lg">
+                  <MailIcon className="mr-2" /> soumalyabhattacharya6@gmail.com
                 </Button>
               </Link>
             </section>
