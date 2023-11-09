@@ -8,6 +8,8 @@ import { ReactNode } from "react";
 import { Badge } from "../ui/badge";
 import About from "./About";
 import Education from "./Education";
+import WorkHistory from "./WorkHistory";
+
 const SectionIndicators = ({
   icon,
   name,
@@ -41,6 +43,7 @@ function RightCardMainContent() {
         icon={<BriefcaseIcon strokeWidth={1} size={16} />}
         name="Work History"
       />
+      <WorkHistory />
       <SectionIndicators
         icon={<FolderGit2Icon strokeWidth={1} size={16} />}
         name="Projects"
