@@ -9,6 +9,7 @@ import { Badge } from "../ui/badge";
 import About from "./About";
 import Education from "./Education";
 import WorkHistory from "./WorkHistory";
+
 const SectionIndicators = ({
   icon,
   name,
