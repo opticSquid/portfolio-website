@@ -18,7 +18,7 @@ function About() {
           Tech Enthusiast & Software Developer
         </i>
       </section>
-      <section className="grid grid-cols-1 font-base mt-2 text-slate-300 justify-start">
+      <section className="grid grid-cols-1 font-base mt-2 text-slate-500 justify-start">
         <span className="text-left">
           I work in web technologies both frontend and backend. I create
           applications that can handle pretty much anything you throw at them.

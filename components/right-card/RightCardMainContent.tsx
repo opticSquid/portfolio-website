@@ -9,6 +9,7 @@ import { Badge } from "../ui/badge";
 import About from "./About";
 import Education from "./Education";
 import WorkHistory from "./WorkHistory";
+import Projects from "./Projects";
 const SectionIndicators = ({
   icon,
   name,
@@ -27,7 +28,7 @@ const SectionIndicators = ({
 );
 function RightCardMainContent() {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-auto my-2">
       <SectionIndicators
         icon={<User2Icon strokeWidth={1} size={16} />}
         name="About"
@@ -47,6 +48,7 @@ function RightCardMainContent() {
         icon={<FolderGit2Icon strokeWidth={1} size={16} />}
         name="Projects"
       />
+      <Projects />
     </div>
   );
 }

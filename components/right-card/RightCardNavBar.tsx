@@ -15,7 +15,7 @@ import {
 } from "../ui/tooltip";
 function RightCardNavBar() {
   return (
-    <div className="w-auto flex flex-col align-middle justify-center gap-2">
+    <div className="h-screen w-auto flex flex-col align-middle justify-center gap-2">
       <NavButtons icon={<User2Icon />} tooltip="About" />
       <NavButtons icon={<GraduationCapIcon />} tooltip="Education" />
       <NavButtons icon={<BriefcaseIcon />} tooltip="Work History" />

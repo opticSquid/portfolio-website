@@ -2,7 +2,7 @@ import WorkCompany from "./WorkCompany";
 
 function WorkHistory() {
   return (
-    <div className="-my-6">
+    <div>
       <WorkCompany
         companyName="Cognizant"
         startTime="Sep, 2023"
